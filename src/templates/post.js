@@ -12,6 +12,7 @@ class PostTemplate extends Component {
             <div>
                 <h1 dangerouslySetInnerHTML={{ __html: currentPost.title }} />
                 <div dangerouslySetInnerHTML={{ __html: currentPost.content }} />
+                <img src={currentPost.featured_media.source_url} />
             </div>
         )
     }
@@ -27,6 +28,9 @@ export default PostTemplate
 export const pageQuery = graphql`
   query currentPostQuery($id: String!) {
     wordpressPost(id: { eq: $id }) {
+      featured_media {
+        source_url
+      }
       title
       content
       date(formatString: "MMMM DD, YYYY")
