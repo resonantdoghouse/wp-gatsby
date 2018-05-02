@@ -10,6 +10,10 @@ Development & testing
 To build the project
 ```npm run build```
 
+*Please note* the navigation is currently hard-coded, I haven't added a dynamic nav build yet, on the TODO.
+
+To edit the navigation links, open index.js in the src/pages folder
+
 ## gatsby-starter-default
 The default Gatsby starter
 

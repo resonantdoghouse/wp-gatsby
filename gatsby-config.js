@@ -10,7 +10,7 @@ module.exports = {
   {
     resolve: "gatsby-source-wordpress",
     options: {
-      baseUrl: "catkittycat.com",
+      baseUrl: "advancebass.com",
       protocol: 'http',
       hostingWPCOM: false,
       useACF: true,
